@@ -1,0 +1,59 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/School system
+/School system/bin/Debug/net8.0
+/School system/obj/Debug/net8.0/apphost.exe
+/School system/obj/Debug/net8.0/refint/School system.API.dll
+*.dll
+/School system/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json
+/School system/obj/Debug/net8.0/rjsmrazor.dswa.cache.json
+/School system/obj/Debug/net8.0/School s.C0BEED94.Up2Date
+/School system/obj/Debug/net8.0/School system.API.AssemblyInfo.cs
+/School system/obj/Debug/net8.0/School system.API.AssemblyInfoInputs.cache
+/School system/obj/Debug/net8.0/School system.API.assets.cache
+/School system/obj/Debug/net8.0/School system.API.csproj.AssemblyReference.cache
+/School system/obj/Debug/net8.0/School system.API.csproj.CoreCompileInputs.cache
+/School system/obj/Debug/net8.0/School system.API.csproj.FileListAbsolute.txt
+/School system/obj/Debug/net8.0/School system.API.genruntimeconfig.cache
+/School system/obj/Debug/net8.0/School system.API.MvcApplicationPartsAssemblyInfo.cache
+/School system/obj/Debug/net8.0/School system.API.MvcApplicationPartsAssemblyInfo.cs
+/School system/obj/Debug/net8.0/School system.API.pdb
+/School system/obj/Debug/net8.0/School system.API.sourcelink.json
+/School system/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/School system/obj/Debug/net8.0/staticwebassets.build.json
+/School system/obj/Debug/net8.0/staticwebassets.build.json.cache
+/School system/obj/Debug/net8.0/staticwebassets.references.upToDateCheck.txt
+/School system/obj/project.assets.json
+/School system/obj/project.nuget.cache
+/School system/obj/School system.API.csproj.nuget.dgspec.json
+/School system/obj/School system.API.csproj.nuget.g.props
+/School system/obj/School system.API.csproj.nuget.g.targets
+/Schoolsystem.Domain/bin/Debug/net8.0
+/Schoolsystem.Domain/obj/Debug/net8.0/Schoolsystem.Domain.AssemblyInfo.cs
+/Schoolsystem.Domain/obj/Debug/net8.0/Schoolsystem.Domain.AssemblyInfoInputs.cache
+/Schoolsystem.Domain/obj/Debug/net8.0/Schoolsystem.Domain.csproj.CoreCompileInputs.cache
+/Schoolsystem.Domain/obj/Debug/net8.0/Schoolsystem.Domain.csproj.FileListAbsolute.txt
+/Schoolsystem.Domain/obj/Debug/net8.0/Schoolsystem.Domain.pdb
+/Schoolsystem.Domain/obj/Debug/net8.0/Schoolsystem.Domain.sourcelink.json
+/Schoolsystem.Infrastructure/bin/Debug/net8.0
+/Schoolsystem.Persistence/bin/Debug/net8.0
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsy.1036FEB9.Up2Date
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.AssemblyInfo.cs
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.AssemblyInfoInputs.cache
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.csproj.AssemblyReference.cache
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.csproj.CoreCompileInputs.cache
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.csproj.FileListAbsolute.txt
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.genruntimeconfig.cache
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.pdb
+/Schoolsystem.Persistence/obj/Debug/net8.0/Schoolsystem.Persistence.sourcelink.json
+/Schoolsystem.Persistence/obj/project.assets.json
+/Schoolsystem.Persistence/obj/project.nuget.cache
+/Schoolsystem.Persistence/obj/Schoolsystem.Persistence.csproj.nuget.dgspec.json
+/Schoolsystem.Infrastructure/obj/Debug/net8.0/Schoolsystem.Infrastructure.AssemblyInfo.cs
+/Schoolsystem.Infrastructure/obj/Debug/net8.0/Schoolsystem.Infrastructure.AssemblyInfoInputs.cache
+/Schoolsystem.Infrastructure/obj/Debug/net8.0/Schoolsystem.Infrastructure.csproj.CoreCompileInputs.cache
+/Schoolsystem.Infrastructure/obj/Debug/net8.0/Schoolsystem.Infrastructure.csproj.FileListAbsolute.txt
+/Schoolsystem.Infrastructure/obj/Debug/net8.0/Schoolsystem.Infrastructure.pdb
+/Schoolsystem.Infrastructure/obj/Debug/net8.0/Schoolsystem.Infrastructure.sourcelink.json
