@@ -16,5 +16,6 @@ namespace Schoolsystem.Persistence
         }
 
         public DbSet<Student> Students { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
     }
 }
