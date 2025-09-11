@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Schoolsystem.Persistence;
 
@@ -11,9 +12,11 @@ using Schoolsystem.Persistence;
 namespace Schoolsystem.Persistence.Migrations
 {
     [DbContext(typeof(School_systemDbContext))]
-    partial class School_systemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250911212019_#CoursrMigration")]
+    partial class CoursrMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,34 +24,6 @@ namespace Schoolsystem.Persistence.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Schoolsystem.Domain.ClassSchedule", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("ClassRoom")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("EndTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
-
-                    b.ToTable("ClassSchedules");
-                });
 
             modelBuilder.Entity("Schoolsystem.Domain.Course", b =>
                 {
@@ -140,17 +115,6 @@ namespace Schoolsystem.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teachers");
-                });
-
-            modelBuilder.Entity("Schoolsystem.Domain.ClassSchedule", b =>
-                {
-                    b.HasOne("Schoolsystem.Domain.Course", "AssignedCourse")
-                        .WithMany()
-                        .HasForeignKey("CourseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AssignedCourse");
                 });
 
             modelBuilder.Entity("Schoolsystem.Domain.Course", b =>
