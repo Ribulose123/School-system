@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using School_system.API.Middlewares;
 using Schoolsystem.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<School_systemDbContext>(options => options.UseSqlS
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,6 +23,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
+app.UseMiddleware<ErrorHandlingMiddleware>();
+
 
 app.UseHttpsRedirection();
 
