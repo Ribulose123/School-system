@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Schoolsystem.Persistence;
 
@@ -11,9 +12,11 @@ using Schoolsystem.Persistence;
 namespace Schoolsystem.Persistence.Migrations
 {
     [DbContext(typeof(School_systemDbContext))]
-    partial class School_systemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250925190814_UpdatedTeacherDateOfHire")]
+    partial class UpdatedTeacherDateOfHire
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -152,7 +155,7 @@ namespace Schoolsystem.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("DateOfBirth")
+                    b.Property<DateTime>("DateOfBith")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateOfHire")
@@ -165,16 +168,15 @@ namespace Schoolsystem.Persistence.Migrations
                     b.Property<int>("Gender")
                         .HasColumnType("int");
 
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PhoneNumber")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Qualification")
+                    b.Property<string>("Qulification")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TeacherName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
